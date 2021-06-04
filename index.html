@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Timer</title>
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .timer {
+        display: flex;
+      }
+      .field {
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        display: block;
+      }
+      .value {
+        display: flex;
+        width: 1.4em;
+        height: 2.1em;
+        align-items: center;
+        justify-content: center;
+        color: rgb(71, 68, 68);
+        margin: 5px;
+        padding: 10px;
+        background-color: #f5ecec;
+        border: solid 1px #000;
+
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 4.25rem;
+        line-height: 0.95;
+        border-radius: 25%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="timer" id="timer-1">
+      <div class="field">
+        <span class="value" data-value="days">11</span>
+        <span class="label">Days</span>
+      </div>
+
+      <div class="field">
+        <span class="value" data-value="hours">11</span>
+        <span class="label">Hours</span>
+      </div>
+
+      <div class="field">
+        <span class="value" data-value="mins">11</span>
+        <span class="label">Minutes</span>
+      </div>
+
+      <div class="field">
+        <span class="value" data-value="secs">11</span>
+        <span class="label">Seconds</span>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
